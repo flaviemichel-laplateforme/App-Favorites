@@ -185,3 +185,225 @@ footer {
 }
 
 /********************************************************FIN INDEX****************************************** */
+
+/*!!!!!!!!!!!!!!! HBO MAX !!!!!!!!!!!!!!!!!!!!!!!*/
+
+.fond {
+    background-image: url('https://nightlife.ca/wp-content/uploads/2020/04/https___cdn.cnn_.com_cnnnext_dam_assets_191029190815-02-hbo-max-1029.jpg');
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Styles pour les sections */
+section {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.titreh2 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.containerhbomax {
+    background: rgba(12, 12, 12, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    border-style: groove;
+    padding: 30px;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    color: #f9f7f7;
+}
+
+button {
+    background: linear-gradient(135deg, #edeef1 0%, #101010 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles pour la section avec l'image */
+section:nth-child(2) {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 100vw;
+    /* Largeur de la fenêtre */
+    margin-left: calc(-50vw + 50%);
+    /* Centre la section sur toute la largeur */
+}
+
+section:nth-child(2) img {
+    width: 100%;
+    /* Largeur complète du container */
+    height: auto;
+    border-radius: 0;
+    /* Supprime les coins arrondis pour un effet pleine largeur */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    /* Assure un bon rendu de l'image */
+}
+
+.mainhbomax {
+    color: rgb(19, 19, 19);
+    display: flex;
+    justify-content: space-around;
+    /* Espacement égal autour des éléments */
+    align-items: stretch;
+    /* Hauteur égale pour tous les containers */
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    /* Espacement entre les containers */
+}
+
+/*!!!!!!!!!!!!!! PAGE EDF *!!!!!!!!!!!!!!!!!!!!!!!!/
+
+
+
+
+/* ========================================
+   MEDIA QUERIES RESPONSIVE
+   ======================================== */
+
+/* Tablettes (768px et moins) */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .titreh1 {
+        margin-left: 0;
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+    header nav ul {
+        margin-right: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .container1,
+    .container2,
+    .container3 {
+        min-height: 300px;
+        padding: 20px;
+    }
+
+    img {
+        width: 100px;
+        height: 50px;
+    }
+}
+
+/* Mobiles (480px et moins) */
+@media screen and (max-width: 480px) {
+    .titreh1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header a {
+        padding: 8px 15px;
+        display: block;
+        text-align: center;
+    }
+
+    main {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .container1,
+    .container2,
+    .container3 {
+        min-height: 250px;
+        padding: 15px;
+    }
+
+    .container1 h2,
+    .container2 h2,
+    .container3 h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .container1 p,
+    .container2 p,
+    .container3 p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    img {
+        width: 80px;
+        height: 40px;
+    }
+}
+
+/* Très petits mobiles (320px et moins) */
+@media screen and (max-width: 320px) {
+    header {
+        padding: 15px 5px;
+    }
+
+    .titreh1 {
+        font-size: 18px;
+        padding: 0 5px;
+    }
+
+    main {
+        padding: 5px;
+        gap: 10px;
+    }
+
+    .container1,
+    .container2,
+    .container3 {
+        min-height: 200px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    img {
+        width: 60px;
+        height: 30px;
+    }
+}
